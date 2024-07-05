@@ -76,4 +76,8 @@ public class Post {
     public int getNumComments() {
         return comments.size();
     }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
 }

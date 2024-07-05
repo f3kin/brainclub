@@ -12,6 +12,7 @@ public class User {
     private List<User> friends;
     private List<FriendRequest> recievedRequests;
     private List<FriendRequest> sentRequests;
+    private EducationInstitution educationInstitution;
 
     public User(String username, String password) {
         this.username = username;
@@ -20,13 +21,6 @@ public class User {
         this.posts = new ArrayList<>();
         this.recievedRequests = new ArrayList<>();
         this.sentRequests = new ArrayList<>();
-    }
-
-    /**
-     * Returns all users posts
-     */
-    public List<Post> getPosts(){
-        return posts;
     }
 
     /**
@@ -74,6 +68,13 @@ public class User {
         // TO_DO : Remove the request from other person
     }
 
+    /**
+     * Makes a comment on the post by a given user
+     */
+    public void makeComment(Post post, Comment comment){
+        post.addComment(comment);
+    }
+
     public void declineFriendRequest(FriendRequest request){
         request.declineRequest();
     }
@@ -100,20 +101,17 @@ public class User {
     public List<FriendRequest> getRecievedRequests() {
         return recievedRequests;
     }
-
-    public void setRecievedRequests(List<FriendRequest> recievedRequests) {
-        this.recievedRequests = recievedRequests;
-    }
-
     public List<FriendRequest> getSentRequests() {
         return sentRequests;
     }
-
-    public void setSentRequests(List<FriendRequest> sentRequests) {
-        this.sentRequests = sentRequests;
-    }
-
     public String getUsername(){
         return username;
     }
+    public void setEducationInstitution(EducationInstitution institution){
+        this.educationInstitution = institution;
+    }
+    public List<Post> getPosts(){
+        return posts;
+    }
+
 }
