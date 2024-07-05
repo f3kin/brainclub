@@ -1,5 +1,8 @@
+package posts;
+
+import posts.Comment;
+
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +29,7 @@ public class Post {
 
     public void addComment(Comment comment){
         comments.add(comment);
-        System.out.println ("Comment: " + comment.getCommentText() + " added.");
+        System.out.println ("posts.Comment: " + comment.getCommentText() + " added.");
     }
 
     public void deleteComment(Comment comment) {

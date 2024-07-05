@@ -1,3 +1,6 @@
+import posts.Comment;
+import posts.Post;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -73,7 +76,7 @@ public class BrainClub {
 
         int i = 0;
         for (Comment comment : user1Post1Comments){
-            System.out.println("Comment " + i + ": " + comment.getCommentText());
+            System.out.println("posts.Comment " + i + ": " + comment.getCommentText());
             i++;
         }
 

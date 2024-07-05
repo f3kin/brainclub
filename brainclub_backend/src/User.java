@@ -1,3 +1,6 @@
+import posts.Comment;
+import posts.Post;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
