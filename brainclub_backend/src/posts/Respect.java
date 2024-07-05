@@ -1,6 +1,7 @@
 package posts;
 
 import java.time.LocalDateTime;
+import users.User;
 
 public class Respect {
     private User user;

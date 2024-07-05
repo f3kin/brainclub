@@ -1,4 +1,5 @@
 package posts;
+import users.User;
 
 import java.time.LocalDateTime;
 

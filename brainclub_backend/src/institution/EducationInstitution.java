@@ -1,3 +1,5 @@
+package institution;
+
 import java.util.List;
 
 public class EducationInstitution {

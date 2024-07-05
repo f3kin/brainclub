@@ -1,5 +1,7 @@
 import posts.Comment;
 import posts.Post;
+import users.FriendRequest;
+import users.User;
 
 import java.util.List;
 import java.util.ArrayList;

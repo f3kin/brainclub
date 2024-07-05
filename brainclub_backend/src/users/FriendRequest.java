@@ -1,3 +1,7 @@
+package users;
+
+import users.User;
+
 public class FriendRequest {
     private User requester;
     private User requestee;
@@ -23,7 +27,7 @@ public class FriendRequest {
     }
 
     /**
-     * User declines friend request. update
+     * users.User declines friend request. update
      */
     public void declineRequest() {
         declined = true;

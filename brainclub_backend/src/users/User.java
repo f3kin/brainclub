@@ -1,5 +1,8 @@
+package users;
+
 import posts.Comment;
 import posts.Post;
+import institution.EducationInstitution;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
