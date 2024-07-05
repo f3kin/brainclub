@@ -8,7 +8,7 @@ public class BrainClub {
     public static void main(String args[])
     {
         BrainClub brainClub = new BrainClub();
-        brainClub.testFriendRequest();
+        // brainClub.testFriendRequest();
 
     }
 
